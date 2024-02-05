@@ -47,6 +47,7 @@
  /* navigation bar */
   .navbar {
     min-height: 150px;
+   
   }
  .container-fluid ul li a{
  display: block;
