@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+ }
+ /*  box padding */
+ 
+ .box{
+    padding-left: 8%;
+    padding-right: 8%;
+ }
+ body {
+    overflow-y: auto;
+}
+ 
+ /* background colors */
+ 
+  .bg{
+     background-color: black;
+     background-size: cover;
+     height:2000px;
+  }
+  .bg-pg {
+    background-color: black;
+    background-size: cover;
+    height:1400px;
+ 
+ }
+ .bg-bg {
+    background-color: black;
+    background-size: cover;
+    height:1400px;
+ 
+ }
+ .bg-ab {
+    background-color: black;
+    background-size: cover;
+    height:800px;
+ 
+ }
+ .bg-re {
+    background-color: black;
+    background-size: cover;
+    height:2000px;
+ 
+ }
+ 
+ /* navigation bar */
+  .navbar {
+    min-height: 150px;
+  }
+ .container-fluid ul li a{
+ display: block;
+ color: rgb(249, 244, 244);
+ padding:24px 30px;
+ text-decoration: underline;
+ text-decoration-color: rgb(238, 10, 105);
+ }
+ .container-fluid ul li a:hover{
+    color: white;
+ }
+ /* home-page content section */
+ .content1{
+   text-align: center;
+   padding-top: 100px;
+ }
+ .first-heading {
+    color: rgb(238, 10, 105);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+ 
+ }
+ .second-heading {
+    color: white;
+    font-size: 80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:normal;
+    font-weight: 500;
+    padding-bottom: 5px;
+ }
+ .third-heading{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+ }
+ 
+ /* home-page button section */
+ .bt{
+    padding-top: 30px;
+ }
+ .button{
+    border-color: rgb(223, 219, 219);
+    border: 1px solid ;
+    padding : 15px 40px;
+    font-size: 10px;
+    background-color: transparent;
+    color: white;
+    font-weight: 800;
+ }
+ 
+ /* project section*/
+ .project-head h1{
+     color: white;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 900;
+ }
+ .project-head h6{
+    color: rgb(185, 176, 176);
+ }
+ .project-head{
+    padding-left: 35px;
+ }
+ .project-head hr{
+    width:100%;
+    text-align:left;
+    margin-left:0;
+    background-color: rgba(244, 250, 251, 0.962);
+    height:8px;
+    border-width: 4px;
+ }
+ .row{
+    padding-left: 65px;
+    column-gap: 25px;
+ }
+ .grid-container-pg{
+    padding-top: 25px;
+    display: grid;
+    row-gap: 25px;
+ }
+ .grid-container-bg{
+    padding-top: 35px;
+    display: grid;
+    row-gap: 25px;
+    padding-left: 70px;
+    padding-right: 75px;
+ }
+ 
+ /* about-page section */
+ .ab-head1{
+    color: white;
+    font-weight: 900;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .about{
+    padding-left: 35px;
+ }
+ .about hr{
+    width:100%;
+    text-align:left;
+    margin-left:0;
+    background-color: rgba(244, 250, 251, 0.962);
+    height:8px;
+    border-width: 4px;
+ }
+ .flex-box {
+    display: flex;
+    align-content: space-between;
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-direction: row;
+ }
+ .img-card{
+    width: 50rem;
+    padding-top: 25px;
+ }
+ .about-me {
+     color:rgb(199, 210, 210);
+     width: 80rem;
+     height: 100px;
+     margin:20px;
+ }
+ 
+ .intro{
+    color:rgb(199, 210, 210);
+    padding-left: 35px;
+ }
+ .work-pro-vol{
+    color:rgb(199, 210, 210);
+    padding-left: 35px;
+ }
+ .resume-head hr{
+    width:100%;
+    text-align:left;
+    margin-left:0;
+    background-color: rgba(244, 250, 251, 0.962);
+    height:8px;
+    border-width: 4px;
+ }
+ .resume-head{
+    padding-left: 35px;
+ }
+ .resume-head h1{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+ }
+ .resume-head h6{
+   color: rgb(185, 176, 176);
+ }
+ .intro{
+    padding-top: 20px;
+ }
+ .intro h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .intro h4{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .skills h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .skills{
+    padding-left: 35px;
+    padding-top: 15px;
+ }
+ .work-pro-vol h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .work-pro-vol h4{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
