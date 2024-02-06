@@ -5,19 +5,54 @@
  /*  box padding */
  
  .box{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
  }
  body {
     overflow-y: auto;
 }
+ /* navigation bar */
+ .navbar {
+    min-height: 150px;
+ }
+
+ .container-fluid {
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .container-fluid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-right: 20px;
+ }
+
+ .container-fluid ul li {
+    margin: 0 10px;
+    /* Adjust spacing between nav items */
+ }
+
+ .container-fluid ul li a {
+    display: block;
+    color: rgb(249, 244, 244);
+    padding: 24px 30px;
+    text-decoration: underline;
+    text-decoration-color: rgb(238, 10, 105);
+ }
+
+ .container-fluid ul li a:hover {
+    color: white;
+ }
  
  /* background colors */
  
   .bg{
      background-color: black;
      background-size: cover;
-     height:2000px;
+   height: 2400px;
   }
   .bg-pg {
     background-color: black;
@@ -41,24 +76,8 @@
     background-color: black;
     background-size: cover;
     height:2000px;
- 
  }
- 
- /* navigation bar */
-  .navbar {
-    min-height: 150px;
-   
-  }
- .container-fluid ul li a{
- display: block;
- color: rgb(249, 244, 244);
- padding:24px 30px;
- text-decoration: underline;
- text-decoration-color: rgb(238, 10, 105);
- }
- .container-fluid ul li a:hover{
-    color: white;
- }
+
  /* home-page content section */
  .content1{
    text-align: center;
@@ -69,8 +88,8 @@
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
- 
  }
+   
  .second-heading {
     color: white;
     font-size: 80px;
@@ -98,131 +117,100 @@
     color: white;
     font-weight: 800;
  }
- 
- /* project section*/
- .project-head h1{
-     color: white;
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     font-weight: 900;
- }
- .project-head h6{
-    color: rgb(185, 176, 176);
- }
- .project-head{
-    padding-left: 35px;
- }
- .project-head hr{
-    width:100%;
-    text-align:left;
-    margin-left:0;
-    background-color: rgba(244, 250, 251, 0.962);
-    height:8px;
-    border-width: 4px;
- }
- .row{
-    padding-left: 65px;
-    column-gap: 25px;
- }
- .grid-container-pg{
-    padding-top: 25px;
-    display: grid;
-    row-gap: 25px;
- }
- .grid-container-bg{
-    padding-top: 35px;
-    display: grid;
-    row-gap: 25px;
-    padding-left: 70px;
-    padding-right: 75px;
- }
+
  
  /* about-page section */
- .ab-head1{
+.about {
+   padding-top: 180px;
+   color: white;
+ }
+ .skills {
     color: white;
-    font-weight: 900;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 30px;
  }
- .about{
-    padding-left: 35px;
- }
- .about hr{
-    width:100%;
-    text-align:left;
-    margin-left:0;
-    background-color: rgba(244, 250, 251, 0.962);
-    height:8px;
-    border-width: 4px;
- }
- .flex-box {
-    display: flex;
-    align-content: space-between;
-    padding-top: 35px;
-    padding-left: 40px;
-    padding-right: 40px;
-    flex-direction: row;
- }
- .img-card{
-    width: 50rem;
-    padding-top: 25px;
- }
- .about-me {
-     color:rgb(199, 210, 210);
-     width: 80rem;
-     height: 100px;
-     margin:20px;
- }
- 
- .intro{
-    color:rgb(199, 210, 210);
-    padding-left: 35px;
- }
- .work-pro-vol{
-    color:rgb(199, 210, 210);
-    padding-left: 35px;
- }
- .resume-head hr{
-    width:100%;
-    text-align:left;
-    margin-left:0;
-    background-color: rgba(244, 250, 251, 0.962);
-    height:8px;
-    border-width: 4px;
- }
- .resume-head{
-    padding-left: 35px;
- }
- .resume-head h1{
-    color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
- }
- .resume-head h6{
-   color: rgb(185, 176, 176);
- }
- .intro{
+ .subskills1 {
     padding-top: 20px;
  }
- .intro h1{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ .subskills2 {
+    padding-top: 20px;
  }
- .intro h4{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ span.a {
+    display: inline;
+    /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid rgb(102, 97, 97);
+    background-color: rgb(44, 36, 36);
+    border-radius: 3px;
  }
- .skills h1{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ span.b {
+    display: inline;
+    /* the default for span */
+    width: 100px;
+    height: 100px;
+   padding: 5px;
+      border: 1px solid rgb(102, 97, 97);
+      background-color: rgb(46, 45, 45);
+      border-radius: 3px;
  }
- .skills{
-    padding-left: 35px;
-    padding-top: 15px;
- }
- .work-pro-vol h1{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
- .work-pro-vol h4{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+.experience {
+   padding-top: 50px;
+   color: white;
+}
+.experience .grid-container {
+   padding-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   /* 2 columns */
+   grid-gap: 10px;
+   /* Space between boxes */
+}
+.experience .ebox {
+
+   height: 120px;
+   border-radius: 5px;
+   border: 1px solid rgb(102, 97, 97);
+   background-color: rgb(46, 45, 45);
+   /* Adjust height as needed */
+}
+.projects {
+   padding-top: 50px;
+   color: white;
+}
+.grid-container {
+   padding-top: 20px;
+   display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* 2 columns */
+      grid-gap: 10px;
+      /* Space between boxes */
+}
+.pbox {
+
+   height: 160px;
+   border-radius: 5px;
+   border: 1px solid rgb(102, 97, 97);
+   background-color: rgb(46, 45, 45);
+   /* Adjust height as needed */
+}
+.blogs {
+   padding-top: 50px;
+   color: white;
+}
+.blogs .grid-container {
+   padding-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   /* 2 columns */
+   grid-gap: 10px;
+   /* Space between boxes */
+}
+.blogs .pbox {
+
+   height: 120px;
+   border-radius: 5px;
+   border: 1px solid rgb(102, 97, 97);
+   background-color: rgb(46, 45, 45);
+   /* Adjust height as needed */
+}
