@@ -1,3 +1,8 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, "system-ui", Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
 body {
    font-family: Arial, sans-serif;
    margin: 0;
@@ -27,7 +32,7 @@ body {
 nav {
    position: fixed;
    /* Fix the navigation bar position */
-   top: 6%;
+   top: 2%;
    /* Set the distance from the top */
    left: 50%;
    /* Center the navigation bar horizontally */
@@ -38,7 +43,7 @@ nav {
    margin-bottom: 20px;
    width: 70%;
    /* Set the width of the navigation bar */
-   max-width: 390px;
+   max-width: 360px;
    /* Set the maximum width of the navigation bar */
    z-index: 2;
    background-color: rgb(187, 177, 177);
@@ -84,30 +89,41 @@ nav ul li a:hover {
 
 .content1 {
    text-align: center;
-   padding-top: 15%;
+   padding-top: 17%;
 }
 
 .first-heading {
    color: rgb(238, 10, 105);
-   font-size: 25px;
+   font-size: 60px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-style: normal;
+   padding: 5%;
+   }
+   
+   @media only screen and (max-width: 600px) {
+      .first-heading {
+         font-size: 25px;
+         /* Change to one column for smaller screens */
+      }
 }
 
 .second-heading {
    color: white;
    font-size: 80px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-style: normal;
    font-weight: 500;
-   padding-bottom: 10px;
+   margin-top: 7px;
 }
-
+@media only screen and (max-width: 600px) {
+   .second-heading {
+      font-size: 60px;
+      /* Change to one column for smaller screens */
+   }
+}
 .third-heading {
    color: white;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 15px;
-   padding-bottom: 10px;
+   margin-top: 20px;
 }
 
 /* home-page button section */
@@ -126,9 +142,9 @@ nav ul li a:hover {
 }
 
 .about {
-   padding-top: 5%;
-   padding-left: 5%;
-   padding-right: 5%;
+   padding-top: 8%;
+      padding-left: 7%;
+      padding-right: 7%;
    color: white;
 
 }
@@ -136,40 +152,23 @@ nav ul li a:hover {
 .skills {
    color: white;
    padding-top: 6%;
-   padding-left: 5%;
-   padding-right: 5%;
+   padding-left: 7%;
+      padding-right: 7%;
 }
 
 .subskills1 {
-   padding-top: 2%;
-}
+   gap: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 12px;}
 
-.subskills2 {
-   padding-top: 2%;
-}
-
-span.a {
-   display: inline;
-   /* the default for span */
-   width: 100px;
-   height: 100px;
+.subskills1 span {
    padding: 5px;
-   border: 1px solid rgb(102, 97, 97);
-   background-color: rgb(26, 24, 24);
-   border-radius: 3px;
+   border-radius: 2px;
+   border: 1px solid #333333;
+   background-color: #232323;
+   box-shadow: 0 2px 3px #0000003d;
 }
-
-span.b {
-   display: inline;
-   /* the default for span */
-   width: 100px;
-   height: 100px;
-   padding: 5px;
-   border: 1px solid rgb(102, 97, 97);
-   background-color: rgb(46, 45, 45);
-   border-radius: 3px;
-}
-
 .experience {
    padding-top: 50px;
    color: white;
