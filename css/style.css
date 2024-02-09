@@ -11,7 +11,7 @@ body {
    /* Black background color */
    overflow-y: auto;
    /* Enable vertical scrollbar for the entire body */
-   height: 1000vh;
+   height: 360vh;
 }
 
 .background-image {
@@ -142,27 +142,37 @@ nav ul li a:hover {
 }
 
 .about {
-   padding-top: 8%;
+   padding-top: 10%;
       padding-left: 7%;
       padding-right: 7%;
    color: white;
+}
 
+.about h1 {
+   font-size: 18px;
+   font-weight: 400px;
+}
+
+.about .about-desc {
+   margin-top: 1%;
 }
 
 .skills {
    color: white;
-   padding-top: 6%;
+   padding-top: 4%;
    padding-left: 7%;
       padding-right: 7%;
 }
 
-.subskills1 {
+.subskills {
    gap: 6px;
       display: flex;
       flex-wrap: wrap;
-      font-size: 12px;}
+      font-size: 12px;
+         padding-top: 1.5%;
+      }
 
-.subskills1 span {
+.subskills span {
    padding: 5px;
    border-radius: 2px;
    border: 1px solid #333333;
@@ -172,16 +182,16 @@ nav ul li a:hover {
 .experience {
    padding-top: 50px;
    color: white;
-   padding-left: 5%;
-   padding-right: 5%;
+   padding-left: 7%;
+      padding-right: 7%;
 }
 
 
 .projects {
    padding-top: 50px;
    color: white;
-   padding-left: 5%;
-   padding-right: 5%;
+   padding-left: 7%;
+      padding-right: 7%;
 }
 
 .projects .grid-container {
@@ -202,18 +212,41 @@ nav ul li a:hover {
 
 .pbox {
 
-   height: 160px;
+   height: 190px;
    border-radius: 5px;
    border: 1px solid rgb(68, 68, 68);
    background-color: rgb(26, 24, 24);
    /* Adjust height as needed */
 }
+.pbox h3 {
+   text-align: center;
+   margin-top: 12%;
+   font-size: 18px;
+   font-weight: 400;
+}
 
+.pbox .techstack {
+   text-align: center;
+   margin-top: 5%;
+   color: #aaaaaa;
+}
+
+.bi-github {
+   float: right;
+   margin-right: 3%;
+   margin-top: 3%;
+}
+
+.bi-link-45deg {
+   float: right;
+   margin-right: 2%;
+   margin-top: 3%;
+}
 .blogs {
    padding-top: 50px;
    color: white;
-   padding-left: 5%;
-   padding-right: 5%;
+   padding-left: 7%;
+      padding-right: 7%;
 }
 
 .blogs .grid-container {
@@ -232,7 +265,7 @@ nav ul li a:hover {
    }
 }
 
-.blogs .pbox {
+.blogs .bbox {
 
    height: 120px;
    border-radius: 5px;
@@ -240,47 +273,176 @@ nav ul li a:hover {
    background-color: rgb(26, 24, 24);
    /* Adjust height as needed */
 }
+.bbox .blog-heading {
+   padding-top: 2%;
+   padding-left: 3%;
+}
 
-.experience,
+.bbox .blog-desc {
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-top: 2%;
+}
+
+.bbox .date-time {
+   display: flex;
+   padding-top: 3%;
+}
+
+.date-time .date {
+   padding-left: 3%;
+}
+
+.date-time .time {
+   padding-left: 3%;
+}
+
+.ex,
 .projects,
 .blogs {
    position: relative;
    z-index: 0;
    /* Set the z-index of these sections lower than nav */
 }
+.ex {
+   padding-top: 50px;
+   color: white;
+   padding-left: 7%;
+   padding-right: 7%;
+}
 
-.additional-sections {
-   display: flex;
-   flex-wrap: wrap;
+.ex .grid-container {
    padding-top: 20px;
-}
-
-.first-div {
-   flex: 1;
-   /* Set the width of the first div */
-   height: 200px;
-   /* Example height */
-   background-color: red;
-   /* Example background color */
-}
-
-.second-div {
-   flex: 1;
-   /* Set the width of the second div */
-   height: 200px;
-   /* Example height */
-   background-color: blue;
-   /* Example background color */
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   /* 2 columns */
+   grid-gap: 10px;
+   /* Space between boxes */
 }
 
 @media only screen and (max-width: 600px) {
-   .additional-sections {
-      flex-direction: column;
-      /* Change flex direction to column for smaller screens */
+   .ex .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      /* Change to one column for smaller screens */
+   }
+}
+
+.ebox {
+   height: 150px;
+   border-radius: 5px;
+   background-color: #000;
+   /* Adjust height as needed */
+}
+
+.ebox .job-content {
+   display: flex;
+   flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+}
+
+.job-details p {
+   padding-top: 2%;
+}
+
+.job-duration {
+   flex: 0 0 15%;
+   /* Set the width of job-duration */
+   /* Center the text */
+}
+
+.job-details {
+   flex: 1;
+   /* Occupy remaining space */
+   }
+   
+   hr {
+      display: block;
+      border: 0;
+      height: 1px;
+      border-top: 1px solid #ccc;
+      margin: 3em 6.5em 0 6.5em;
+   }
+   
+   .card {
+      display: flex;
+      height: 40px;
+      width: 270px;
+      float: right;
+      padding-top: 1%;
+   }
+   
+   .card svg {
+      position: absolute;
+      display: flex;
+      width: 60%;
+      height: 100%;
+      font-size: 24px;
+      font-weight: 700;
+      opacity: 1;
+      transition: opacity 0.25s;
+      z-index: 2;
+      cursor: pointer;
+   }
+   
+   .card .social-link1,
+   .card .social-link2,
+   .card .social-link3,
+   .card .social-link4 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 15%;
+      color: whitesmoke;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.25s;
+      border-radius: 50px;
+   }
+   
+   .card svg {
+      transform: scale(1);
+   }
+   
+   .card .social-link1:hover {
+      background: #f09433;
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+      animation: bounce_613 0.4s linear;
+   }
+   
+   .card .social-link2:hover {
+      background-color: #00ccff;
+      animation: bounce_613 0.4s linear;
+   }
+   
+   .card .social-link3:hover {
+      background-color: #5865f2;
+      animation: bounce_613 0.4s linear;
+   }
+   
+   .card .social-link4:hover {
+      background-color: #12a50b;
+      animation: bounce_613 0.4s linear;
+   }
+   
+   @keyframes bounce_613 {
+      40% {
+         transform: scale(1.4);
+      }
+
+                        60% {
+                           transform: scale(0.8);
+                        }
+
+                        80% {
+                           transform: scale(1.2);
    }
 
-   .second-div {
-      margin-top: 1px;
-      /* Add margin to separate the second div from the first div */
+                        100% {
+                           transform: scale(1);
    }
 }
