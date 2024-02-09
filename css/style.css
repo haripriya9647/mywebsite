@@ -7,7 +7,7 @@ body {
    font-family: Arial, sans-serif;
    margin: 0;
    padding: 0;
-   background-color: #000;
+   background-color: #000000;
    /* Black background color */
    overflow-y: auto;
    /* Enable vertical scrollbar for the entire body */
@@ -39,16 +39,16 @@ nav {
    transform: translateX(-50%);
    /* Adjust horizontal centering */
    padding: 15px;
-   border-radius: 20px;
+   border-radius: 25px;
    margin-bottom: 20px;
-   width: 70%;
+   width: 60%;
    /* Set the width of the navigation bar */
-   max-width: 360px;
+   max-width: 440px;
    /* Set the maximum width of the navigation bar */
    z-index: 2;
-   background-color: rgb(187, 177, 177);
-   /* Fallback color */
-   background-color: rgba(176, 165, 165, 0.4);
+   backdrop-filter: blur(40px);
+      /* Add blur effect */
+      transition: backdrop-filter 0.3s ease;
 
 }
 
@@ -66,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-   color: rgb(255, 255, 255);
+   color: #ccc;
    text-decoration: none;
    padding: 8px 12px;
       border-radius: 20px;
@@ -80,7 +80,7 @@ nav ul li a:hover {
 /* Responsive adjustments */
 @media only screen and (max-width: 600px) {
    nav {
-      width: 85%;
+      width: 93%;
       /* Adjust width for smaller screens */
       max-width: none;
       /* Remove maximum width for smaller screens */
