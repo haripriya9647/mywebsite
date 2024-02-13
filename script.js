@@ -3,13 +3,10 @@ document.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop > 50) {
-    navbar.style.backdropFilter = 'blur(3px)';
-      navbar.style.backgroundColor = 'rgba(50, 50, 50, 0.8)';
-      
+    navbar.style.backdropFilter = 'blur(10px)';
+    navbar.style.backgroundColor = 'rgba(50, 50, 50, 0.8)';
   } else {
     navbar.style.backdropFilter = 'none';
-      navbar.style.backgroundColor = 'transparent';
+    navbar.style.backgroundColor = 'transparent';
   }
 });
-
-
