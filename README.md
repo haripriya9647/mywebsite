@@ -1,5 +1,5 @@
 # Portfolio-website
-This is a portfolio website that shocases all of my skills, experiences and writings 😻
+This is a portfolio website that showcases all of my skills, experiences, and writings 😻
 
 ## Future vision 🚀
 - I am planning to add a feature through which people can contact me.
